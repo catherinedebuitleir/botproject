@@ -1,0 +1,39 @@
+    <div id="nav">
+        <nav id="pyracloud-navigation-top">
+            <div id="nav-content">
+                <ul id="menu-user-info">
+                    <li><a href="#"><i class="far fa-bell" style="margin-right: 15px; margin-top: 3px; float: left; font-size: 16px;"></i></a></li>
+                    <li><a href="#"><i class="fas fa-users" style="margin-right: 15px; margin-top: 3px; float: left; font-size: 16px;"></i></a></li>
+                    <li><a href="#"><i class="far fa-flag" style="margin-right: 15px; margin-top: 3px; float: left; font-size: 16px;"></i></a></li>
+                    <li><a href="#"><i class="fas fa-folder" style="margin-right: 15px; margin-top: 3px; float: left; font-size: 16px;"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart" style="margin-right: 15px; margin-top: 3px; float: left; font-size: 16px;"></i></a></li>
+
+                    <span class="user-box">
+                      <i class="fa fa-user-circle" id="fa-user-circle-o" aria-hidden="true" style="margin-right: 5px;"></i>
+                        <li>Will Smith
+                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </li>
+                    </span>
+                    <span class="user-box">
+                      <li>Eng
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                      </li>
+                    </span>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Botton naviagtion section -->
+        <nav id="pyracloud-navigation">
+            <div id="nav-content-bottom">
+                <img id="pyracloud-logo" src="images/pyracloud-Logo.png" alt="PyraCloud logo will link to the dashboard">
+                <ul id="menu-primary">
+                    <li>Dashboard</li>
+                    <li>Documents <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                    <li>Buy <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                    <li>Manage <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                    <li>Company <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </div> {# end nav #}

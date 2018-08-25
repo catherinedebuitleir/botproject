@@ -1,0 +1,13 @@
+
+    <!-- Required Stylesheets -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="css/vendor/hopscotch.css">
+    <link rel="stylesheet" href="css/pyra.css">
+    <link rel="stylesheet" href="css/vendor/jquery-ui-1.10.3.custom.css">
+    <link rel="stylesheet" href="css/custom.css">
+    {# if you like scss the temp.scss file loads here #}
+    <link rel="stylesheet" href="css/temp.css">
+    <!-- Required fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600" rel="stylesheet">

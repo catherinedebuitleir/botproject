@@ -1,0 +1,106 @@
+<footer>
+                <br>
+                <div id="footer-content">
+                    <div class="row ">
+                        <div class="col-lg-1 ">
+                            <img src="images/PyraCloud-footer-logo.png " alt="SoftwareOne Logo " id="footer-logo ">
+                        </div>
+                        <div class="col-lg-11 ">
+                            <p class="breadcrumb-current-page " id="footer-paragraph ">SoftwareONE is a trademark of Software ONE, Inc. "The Software Licensing Experts " is a service mark of Software ONE, Inc. VARassist is a trademark of Software ONE, Inc. "It pays to partner " is a service mark of Software
+                                ONE, Incorporated. All other trademarks, service marks or trade names appearing herein are the property of their respective owners.<br>Privacy Statement | Terms of Service
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal " tabindex="-1 " role="dialog " aria-labelledby="myModalLabel ">
+                    <div class="modal-dialog " role="document ">
+                        <div class="modal-content ">
+                            <div class="modal-header ">
+                                <button type="button " class="close " data-dismiss="modal " aria-label="Close "><span aria-hidden="true "><i class="fa fa-times " aria-hidden="true " style="margin-top: 6px; "></i></span></button>
+                                <h4 class="modal-title " id="myModalLabel ">Add To Cart</h4>
+                            </div>
+                            <div class="modal-body ">
+                                <div class="cart ">
+                                    <div class="row " style="margin-bottom: 0px; ">
+                                        <div class="col-lg-12 ">
+                                            <h4><i class="fas fa-check-circle "></i> Selected Products</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row " style="margin-bottom: 0px; ">
+                                        <div class="col-lg-12 ">
+                                            <table style="width:100% ">
+                                                <tr style="margin-bottom: 6px; ">
+                                                    <th class="col-name "></th>
+                                                    <th class="col-input ">Qty</th>
+                                                    <th class="col-price ">Price</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Affinity Designer - Windows </td>
+                                                    <td class="col-input "><input style="height: 30px; width: 60px; margin-top: 3px; display: inline; border-radius: 1px; " type="number " value="1 " class="form-control " id="exampleInputEmail1
+                " aria-describedby="emailHelp " placeholder=" "></td>
+                                                    <td class="col-price ">1,105.80</td>
+                                                    <td><a type="button " style="float: right; "><i class="fa fa-times " aria-hidden="true " style="color: #009abd; "></i> Remove</a></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td> </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row " style="margin-bottom: 0px; ">
+                                    <div class="col-lg-12 ">
+                                        <p style="font-weight: 500; ">Quick Add Favorites</p>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-lg-12 ">
+                                        <div class="items ">
+                                            <table style="width:100% ">
+                                                <tr style="margin-bottom: 15px; ">
+                                                    <th></th>
+                                                    <th>Qty</th>
+                                                    <th>Price</th>
+                                                    <th></th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name "><i class="fa fa-star " style="color: #009abd; "></i> Office 365 </td>
+                                                    <td class="col-input "><input style="height: 30px; width: 60px; margin-top: 3px; display: inline; border-radius: 1px; " type="number " value="1 " class="form-control " id="exampleInputEmail1
+                " aria-describedby="emailHelp " placeholder=" "></td>
+                                                    <td class="col-price ">2,105.80</td>
+                                                    <td><button type="button " class="btn btn-default " style="float: right; margin-top: 6px; margin-bottom: 6px; ">Add To Cart</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name "><i class="fa fa-star " style="color: #009abd; "></i> Microsoft Visio </td>
+                                                    <td class="col-input "><input style="height: 30px; width: 60px; margin-top: 3px; display: inline; border-radius: 1px; " type="number " value="1 " class="form-control " id="exampleInputEmail1
+                " aria-describedby="emailHelp " placeholder=" "></td>
+                                                    <td class="col-price ">2,105.80</td>
+                                                    <td><button type="button " class="btn btn-default " style="float: right; margin-top: 6px; margin-bottom: 6px; ">Add To Cart</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="col-name "><i class="fa fa-star " style="color: #009abd; "></i> MalWare </td>
+                                                    <td class="col-input "><input style="height: 30px; width: 60px; margin-top: 3px; display: inline; border-radius: 1px; " type="number " value="1 " class="form-control " id="exampleInputEmail1
+                " aria-describedby="emailHelp " placeholder=" "></td>
+                                                    <td class="col-price ">2,105.80</td>
+                                                    <td><button type="button " class="btn btn-default " style="float: right; margin-top: 6px; margin-bottom: 6px; ">Add To Cart</button></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer ">
+                                <button type="button " class="btn btn-primary " style="margin-left: 15px; "><i class="fas fa-arrow-right "></i> Continue Shopping</button>
+                                <button type="button " class="btn btn-primary " style="margin-left: 15px; "><i class="fas fa-shopping-cart "></i> Check Out</button>
+                                <button type="button " class="btn btn-default " style="margin-left: 15px; margin-right: 30px; " data-dismiss="modal "><i class="fa fa-times " aria-hidden="true " style="color: #009abd; "></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>

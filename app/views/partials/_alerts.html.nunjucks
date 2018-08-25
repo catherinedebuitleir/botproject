@@ -1,0 +1,13 @@
+
+        <div class="alert alert-onboarding alert-dismissible">
+            <div class="row">
+                <div class="col-lg-1">
+                    <i class="far fa-file-alt text-center"></i>
+                </div>
+                <div class="col-lg-11">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    <h4 style="">Catchy Title Here</h4>
+                    Write useful information goes here and add<a href="#"> links to otherplaces </a>so the user knows what the purpose of this page is. 
+                </div>
+            </div>
+        </div>

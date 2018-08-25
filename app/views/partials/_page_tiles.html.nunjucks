@@ -1,0 +1,16 @@
+{% macro tile( name = "invoices",
+               value = '12', id_ref = 'high-impact',
+               fa_class = 'fas fa-edit', tile_class = 'tile_info', link = '#' ) %}
+{# set the class of tiles #}
+{% set all_class = "col-lg-2 col-md-4 col-sm-4 col-xs-6 tiles margin-packer" %}
+
+<a href = {{ link }}>
+    <div class="{{ all_class}}" href="#"
+    id="{{ id_ref }}" href="#" title="" rel="">
+        <div class="tile {{ tile_class }}" style="{{ style }}">
+            <p>{{ name }}</p>
+            <h4><i class="{{ fa_class }}"></i> {{ value }}</h4>
+        </div>
+    </div>
+</a>
+{% endmacro %}
