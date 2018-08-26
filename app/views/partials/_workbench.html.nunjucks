@@ -96,9 +96,15 @@
                                             <a href="#">Office Pro Plus</a>
                                             <p><small>A133.0142.SL | 269-05557</small></p>
                                             <p style="font-size: 12px;">by Microsoft</p>
-                                            <h4 class="price">156.00 USD<small></small></h4>
+                                            <h4 class="price">157.00 USD<small></small></h4>
                                         </div>
                                         <hr style="margin-top: 15px; margin-bottom: 15px;">
+                                        {% import "macros/_split_button_drop_macro.html.nunjucks" as split %}
+                                        {# split button macro #}
+                                        {{ split.butt("Shop",
+                                                      items = [{ link: "#", name: "Action" },
+                                                               { link: "#", name: "Action 2" }],
+                                                               sep = true ) }}
                                         <a href="#" style="font-size: 14px;"><i class="fas fa-star" style="color: #009abd;"></i> Favorite </a> <span style="color: #CCD1D9; margin-right: 6px; margin-left: 6px;">|</span> <a href="#" style="font-size: 14px;"><i class="fas fa-shopping-cart" style="color: #009abd;"></i>  Add to cart</a>
                                     </div>
                                 </div>
