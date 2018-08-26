@@ -3,14 +3,25 @@
         <!-- Area that contains the breadcrumbs, header and page furniture -->
             <div class="row info-cards">
             {# we can reuse a 'macro' and pass variables to it #}
-            {% import "partials/_page_tiles.html.nunjucks" as ptile %}
+            {% import "macros/_page_tiles_macro.html.nunjucks" as ptile %}
             {# each line below reuses the macro #}
-                {{ ptile.tile( name = 'Invoices', value = "25", tile_class = "tile_info" ) }}
-                {{ ptile.tile( name = 'Quotes Expired', value = "1", fa_class = "far fa-file", tile_class = "tile_danger" ) }}
-                {{ ptile.tile( name = 'Open Invoices', value = "1", fa_class = "far fa-file", tile_class = "tile_warn" ) }}
-                {{ ptile.tile( name = 'PO Requested', value = "1", fa_class = "fas fa-shopping-cart", tile_class = "tile_warn" ) }}
-                {{ ptile.tile( name = 'Quotes Ready', value = "2", fa_class = "far fa-file", tile_class = "tile_good" ) }}
-                {{ ptile.tile( name = 'Archived', value = "192", fa_class = "fas fa-history", tile_class = "tile_info" ) }}
+                {{ ptile.tile( name = 'Invoices',
+                   value = "25", tile_class = "tile_info" ) }}
+                {{ ptile.tile( name = 'Quotes Expired',
+                   value = "1", fa_class = "far fa-file",
+                   tile_class = "tile_danger" ) }}
+                {{ ptile.tile( name = 'Open Invoices',
+                   value = "1", fa_class = "far fa-file",
+                   tile_class = "tile_warn" ) }}
+                {{ ptile.tile( name = 'PO Requested',
+                   value = "1", fa_class = "fas fa-shopping-cart",
+                   tile_class = "tile_warn" ) }}
+                {{ ptile.tile( name = 'Quotes Ready',
+                   value = "2", fa_class = "far fa-file",
+                   tile_class = "tile_good" ) }}
+                {{ ptile.tile( name = 'Archived',
+                   value = "192", fa_class = "fas fa-history",
+                   tile_class = "tile_info" ) }}
             </div>
                 <!--Start of tab-->
                 <div class="row">

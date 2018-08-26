@@ -1,3 +1,10 @@
+{# you can call a macro by
+    {% import "macros/_page_tiles_macro.html.nunjucks" as ptile %}
+    now call it:
+        {{ ptile.tile( name = 'PO Requested',
+            value = "1", fa_class = "fas fa-shopping-cart",
+            tile_class = "tile_warn" ) }}  #}
+
 {% macro tile( name = "invoices",
                value = '12', id_ref = 'high-impact',
                fa_class = 'fas fa-edit', tile_class = 'tile_info', link = '#' ) %}
