@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
-const njksRender = require('gulp-nunjucks-render');
+const njkRender = require('gulp-nunjucks-render');
 const plumber = require('gulp-plumber');
 const imagemin = require('gulp-imagemin');
 const cache = require('gulp-cache');
@@ -12,7 +12,7 @@ let src = {
     scss: './app/scss/**/*.scss',
     css: './app/css/**/*.css',
     html: './app/*.html',
-    views: './app/views/**/*.+(html|njks)',
+    views: './app/views/**/*.+(html|njk)',
     js: './app/js/**/*.js',
     images: 'app/images/**/*'
 };
@@ -32,9 +32,9 @@ let dist = {
 // nunjuck templates
 gulp.task('templates', ['move_html'], function() {
     return gulp
-    .src('app/views/**/*.+(html|njks)')
+    .src('app/views/**/*.+(html|njk)')
     .pipe(plumber())
-    .pipe(njksRender({
+    .pipe(njkRender({
         path: ['app/views/','app/views/partials/'],
         watch: true
     }))

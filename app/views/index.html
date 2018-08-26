@@ -5,10 +5,10 @@
     <title>Workbench | PyraCloud</title>
     <meta name="description" content="PyraCloud">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% include "partials/_head.html.njks" %}
+    {% include "partials/_head.html.njk" %}
 </head>
 <body>
-    {% include "partials/_nav.html.njks" %}
+    {% include "partials/_nav.html.njk" %}
     <section class="gap"></section>
     <div class="container-fluid">
         <header>
@@ -22,14 +22,14 @@
         <!-- This is where the white page begins -->
         <div class="row">
             <div class="card">
-                {% include "partials/_workbench.html.njks" %}
+                {% include "partials/_workbench.html.njk" %}
             </div>
         </div>
     </div>
     <div class="container-fluid">
-        {% include "partials/_footer.html.njks" %}
+        {% include "partials/_footer.html.njk" %}
     </div>
     <!-- Require js files -->
-    {% include "partials/_scripts.html.njks"%}
+    {% include "partials/_scripts.html.njk"%}
 </body>
 </html>

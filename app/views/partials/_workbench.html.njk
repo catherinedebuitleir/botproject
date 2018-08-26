@@ -3,7 +3,7 @@
         <!-- Area that contains the breadcrumbs, header and page furniture -->
             <div class="row info-cards">
             {# we can reuse a 'macro' and pass variables to it #}
-            {% import "macros/_page_tiles_macro.html.njks" as ptile %}
+            {% import "macros/_page_tiles_macro.html.njk" as ptile %}
             {# each line below reuses the macro #}
                 {{ ptile.tile( name = 'Invoices',
                    value = "25", tile_class = "tile_info" ) }}
@@ -99,12 +99,13 @@
                                             <h4 class="price">157.00 USD<small></small></h4>
                                         </div>
                                         <hr style="margin-top: 15px; margin-bottom: 15px;">
-                                        {% import "macros/_split_button_drop_macro.html.njks" as split %}
+                                        {% import "macros/_split_button_drop_macro.html.njk" as split %}
                                         {# split button macro #}
                                         {{ split.butt("Shop",
-                                                      items = [{ link: "#", name: "Action" },
-                                                               { link: "#", name: "Action 2" }],
-                                                               sep = true ) }}
+                                                      items = [{ link: "#", name: "Add to cart" },
+                                                               { link: "#", name: "Favorite" }],
+                                                      sep = true,
+                                                      sep_item = {link: "#", name: "email a link"} ) }}
                                         <a href="#" style="font-size: 14px;"><i class="fas fa-star" style="color: #009abd;"></i> Favorite </a> <span style="color: #CCD1D9; margin-right: 6px; margin-left: 6px;">|</span> <a href="#" style="font-size: 14px;"><i class="fas fa-shopping-cart" style="color: #009abd;"></i>  Add to cart</a>
                                     </div>
                                 </div>
