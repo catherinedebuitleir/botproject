@@ -15,7 +15,7 @@
     "gulp-cache": "^1.0.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-mustache": "^3.0.1",
-    "gulp-njks-render": "^2.2.2",
+    "gulp-nunjucks-render": "^2.2.2",
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^4.0.1",
     "jquery": "^3.3.1"
