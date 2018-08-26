@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
-const nunjucksRender = require('gulp-nunjucks-render');
+const njksRender = require('gulp-njks-render');
 const plumber = require('gulp-plumber');
 const imagemin = require('gulp-imagemin');
 const cache = require('gulp-cache');
@@ -12,7 +12,7 @@ let src = {
     scss: './app/scss/**/*.scss',
     css: './app/css/**/*.css',
     html: './app/*.html',
-    views: './app/views/**/*.+(html|nunjucks)',
+    views: './app/views/**/*.+(html|njks)',
     js: './app/js/**/*.js',
     images: 'app/images/**/*'
 };
@@ -32,9 +32,9 @@ let dist = {
 // nunjuck templates
 gulp.task('templates', ['move_html'], function() {
     return gulp
-    .src('app/views/**/*.+(html|nunjucks)')
+    .src('app/views/**/*.+(html|njks)')
     .pipe(plumber())
-    .pipe(nunjucksRender({
+    .pipe(njksRender({
         path: ['app/views/','app/views/partials/'],
         watch: true
     }))
@@ -87,7 +87,7 @@ gulp.task('js', function() {
 });
 
 // Static Server + watching scss/html files
-gulp.task('default', ['sass', 'css', 'templates', 'js', 'images'], 
+gulp.task('default', ['sass', 'css', 'templates', 'js', 'images'],
 function() {
     browserSync({ server: dist.html });
     gulp.watch(src.scss, ['sass']);

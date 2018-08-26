@@ -3,7 +3,7 @@
         <!-- Area that contains the breadcrumbs, header and page furniture -->
             <div class="row info-cards">
             {# we can reuse a 'macro' and pass variables to it #}
-            {% import "macros/_page_tiles_macro.html.nunjucks" as ptile %}
+            {% import "macros/_page_tiles_macro.html.njks" as ptile %}
             {# each line below reuses the macro #}
                 {{ ptile.tile( name = 'Invoices',
                    value = "25", tile_class = "tile_info" ) }}
@@ -99,7 +99,7 @@
                                             <h4 class="price">157.00 USD<small></small></h4>
                                         </div>
                                         <hr style="margin-top: 15px; margin-bottom: 15px;">
-                                        {% import "macros/_split_button_drop_macro.html.nunjucks" as split %}
+                                        {% import "macros/_split_button_drop_macro.html.njks" as split %}
                                         {# split button macro #}
                                         {{ split.butt("Shop",
                                                       items = [{ link: "#", name: "Action" },
