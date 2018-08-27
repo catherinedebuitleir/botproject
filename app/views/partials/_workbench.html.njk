@@ -5,7 +5,7 @@
             {# we can reuse a 'macro' and pass variables to it #}
             {% import "macros/_page_tiles_macro.html.njk" as ptile %}
             {# each line below reuses the macro #}
-                {{ ptile.tile( name = 'Invoices',
+                {{ ptile.tile( name = 'Invoices', id_ref = "invoices",
                    value = "25", tile_class = "tile_info" ) }}
                 {{ ptile.tile( name = 'Quotes Expired',
                    value = "1", fa_class = "far fa-file",
