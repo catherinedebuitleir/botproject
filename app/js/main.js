@@ -50,7 +50,14 @@ var tour = {
 $(document).ready(function($) {
   // alert("js is working");
   // first child p
-  var first_P = $("#invoices :first-child p").text('Monkeys');
+  var first_P = $("#invoices p span").text('Monkeys');
   // first child h4
-  var first_h4 = $("#invoices :first-child h4").text('26');
+  $("#invoices").click(function(){
+    var num = $("#invoices h4 span").text();
+    var num_int = parseInt(num);
+    num_int = num_int + 1;
+    $("#invoices h4 span").text(num_int);
+    console.warn(num_int);
+  })
+  // var first_h4 = $("#invoices :first-child h4").text('26');
 });
