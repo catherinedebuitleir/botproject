@@ -49,4 +49,8 @@ var tour = {
 
 $(document).ready(function($) {
   // alert("js is working");
+  // first child p
+  var first_P = $("#invoices :first-child p").text('Monkeys');
+  // first child h4
+  var first_h4 = $("#invoices :first-child h4").text('26');
 });
