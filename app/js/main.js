@@ -64,17 +64,22 @@ $(document).ready(function($) {
   // });
   // add a function to all class
   $(function(){
-    $('.tiles h4 span').click(function(){
-      if($(this).data('count')) { //aleady clicked
-        $(this).data('count', $(this).data('count') + 1);
-      } else {
-        // initialise a number
-        var num = $(this).text();
-        var num_int = parseInt(num);
-        //set number and initialize
-        $(this).data('count', num_int)
-      }
-      $(this).html($(this).data('count'))
+    $('.tiles').on("click", function() {
+      //save the selector as num
+      var num = $(this).find("h4 span");
+      var num = num.text();
+      var num_int = parseInt(num);
+      num_int = num_int + 1;
+      //set the count
+      $(this).find('h4 span').text(num_int);
     })
   });
+  $('.tiles').bind('click', function () {
+    var sum = 0;
+    $('.tiles').each(function() {
+      sum += parseInt($(this).find("h4 span").text());
+    });
+    // here, you have your sum
+    alert("Sum of all tiles: " + sum);
+   });
 });
