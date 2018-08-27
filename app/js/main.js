@@ -57,7 +57,9 @@ $(document).ready(function($) {
     var num_int = parseInt(num);
     num_int = num_int + 1;
     $("#invoices h4 span").text(num_int);
-    console.warn(num_int);
+    // example of changing css of child (.tile class within #invoices id)
+    $("#invoices .tile").css('border', '1px dashed green');
+    // example of selecting changing text by parents class
+    $("#invoices h4 .fas").css('color', 'green');
   })
-  // var first_h4 = $("#invoices :first-child h4").text('26');
 });
