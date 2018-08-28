@@ -67,13 +67,13 @@ $(document).ready(function($) {
     $('.tiles').on("click", function() {
       //save the selector as num
       var num = $(this).find("h4 span");
-      var num = num.text();
-      var num_int = parseInt(num);
+      var num_int = parseInt(num.text());
       num_int = num_int + 1;
       //set the count
       $(this).find('h4 span').text(num_int);
-    })
+    });
   });
+  // add a function to get all tiles
   $('.tiles').bind('click', function () {
     var sum = 0;
     $('.tiles').each(function() {
