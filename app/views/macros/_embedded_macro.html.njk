@@ -4,7 +4,7 @@
         {{ ptile.tile( name = 'PO Requested',
             value = "1", fa_class = "fas fa-shopping-cart",
             tile_class = "tile_warn",
-            macro = "macros/_temp_macro.html.njk") }}  #}
+            partial = "partial/_temp.html.njk") }}  #}
 
 {% macro tile( name = "invoices",
                value = '12', id_ref = 'tile_1',
@@ -23,7 +23,7 @@
             <h4><i class="{{ fa_class }}"></i>
               <span>{{ value }}</span>
               {% if(macro) %}
-              {% import {{macro_inner}} as temp %}
+              {% include macro_inner %}
               {{ temp.foo() }}
               {% endif %}
             </h4>
