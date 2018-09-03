@@ -5,31 +5,33 @@
     <title>Workbench | PyraCloud</title>
     <meta name="description" content="PyraCloud">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% include "partials/_head.html.njk" %}
+    {% include "../partials/_head.html.njk" %}
 </head>
 <body>
-    {% include "partials/_nav.html.njk" %}
+    {% include "../partials/_nav.html.njk" %}
     <section class="gap"></section>
     <div class="container-fluid">
         <header>
             <div id="breadcrumb">
-                <h5>You Are Here: <a href="#" class="breadcrumb-active">Home</a> > <span class="breadcrumb-current-page">Procurement Workbench </span></h5>
+                <h5>You Are Here: <a href="#" class="breadcrumb-active">Home</a> > <span class="breadcrumb-current-page">{{ page_title }} </span></h5>
             </div>
-            <h1>Procurement Workbench</h1>
+            <h1>{{ page_title }}</h1>
             <div id="pagefurniture">
             </div>
         </header>
         <!-- This is where the white page begins -->
         <div class="row">
             <div class="card">
-                {% include "partials/_workbench.html.njk" %}
+            {% block content %}
+                {% include "../partials/_workbench.html.njk" %}
+            {% endblock %}
             </div>
         </div>
     </div>
     <div class="container-fluid">
-        {% include "partials/_footer.html.njk" %}
+        {% include "../partials/_footer.html.njk" %}
     </div>
     <!-- Require js files -->
-    {% include "partials/_scripts.html.njk"%}
+    {% include "../partials/_scripts.html.njk"%}
 </body>
 </html>
