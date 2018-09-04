@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     {% block header%}
-        {% include "_head.html.njk" %}
+        {% include "./page_components/_head.html.njk" %}
     {% endblock %}
 </head>
 <body>
-    {% include "_nav.html.njk" %}
+    {% include "./page_components/_nav.html.njk" %}
     <section class="gap"></section>
     <div class="container-fluid">
         <header>
@@ -21,17 +21,17 @@
         <div class="row">
             <div class="card">
             {% block content %}
-                {% include "_workbench.html.njk" %}
+                {% include "./partials/_workbench.html.njk" %}
             {% endblock %}
             </div>
         </div>
     </div>
     <div class="container-fluid">
-        {% include "_footer.html.njk" %}
+        {% include "./page_components/_footer.html.njk" %}
     </div>
     <!-- Require js files -->
     {% block scripts %}
-        {% include "_scripts.html.njk"%}
+        {% include "./page_components/_scripts.html.njk"%}
     {% endblock %}
 </body>
 </html>

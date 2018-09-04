@@ -1,9 +1,9 @@
-{% extends "base_pages/_base_page.njk" %}
+{% extends "./_base_page.njk" %}
 
 {% set page_title = "Image Components" %}
 
 {% block header %}
-{# this comments ensures the header is loaded and nott overridden #}
+{# this comments ensures the header is loaded and not overridden #}
     {{ super() }}
     {# include page specific css links you like #}
 {% endblock %}
