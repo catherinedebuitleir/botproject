@@ -1,0 +1,21 @@
+{% extends "./_base_page.njk" %}
+
+{% set page_title = "Page Title" %}
+
+{# if you include a block it's immeadiatley overridden #}
+{% block header %}
+    {# a call to super insures it's not overridden #}
+    {{ super() }}
+    {# include page specific css below #}
+{% endblock %}
+
+{% block content %}
+    {{ super() }}
+    {# content starts below #}
+
+{% endblock %}
+
+{% block scripts%}
+    {{ super() }}
+    {# include page specific js here #}
+{% endblock %}
