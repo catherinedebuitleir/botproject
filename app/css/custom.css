@@ -1,3 +1,10 @@
 .info-cards .tiles {
   margin-bottom: 20px;
 }
+
+/* a class for placeholder images */
+.place_holder {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
