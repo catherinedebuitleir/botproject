@@ -10,54 +10,10 @@
 
 {% block content %}
 {# content starts below #}
-<div class="row">
-    <div class="col-lg-3 col-md-3 col-xs-6">
-        <a href="#" class="thumbnail">
-            <img alt="placeholder-image" src="images/placeholder.jpg" style="height: 180px; width: 100%; display: block;">
-        </a>
-    </div>
-    <div class="col-lg-3 col-md-3 col-xs-6">
-        <a href="#" class="thumbnail">
-            <img alt="placeholder-image" src="images/placeholder.jpg" style="height: 180px; width: 100%; display: block;">
-        </a>
-    </div>
-    <div class="col-lg-3 col-md-3 col-xs-6">
-        <a href="#" class="thumbnail">
-            <img alt="placeholder-image" src="images/placeholder.jpg" style="height: 180px; width: 100%; display: block;">
-        </a>
-    </div>
-    <div class="col-lg-3 col-md-3 col-xs-6">
-        <a href="#" class="thumbnail">
-            <img alt="placeholder-image" src="images/placeholder.jpg" style="height: 180px; width: 100%; display: block;">
-        </a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-3 col-md-3 col-xs-6">
-        <a href="#" class="thumbnail">
-            <img alt="placeholder-image" src="images/placeholder.jpg" style="height: 180px; width: 100%; display: block;">
-        </a>
-    </div>
-    <div class="col-lg-3 col-md-3 col-xs-6">
-        <a href="#" class="thumbnail">
-            <img alt="placeholder-image" src="images/placeholder.jpg" style="height: 180px; width: 100%; display: block;">
-        </a>
-    </div>
-    <div class="col-lg-3 col-md-3 col-xs-6">
-        <a href="#" class="thumbnail">
-            <img alt="placeholder-image" src="images/placeholder.jpg" style="height: 180px; width: 100%; display: block;">
-        </a>
-    </div>
-    <div class="col-lg-3 col-md-3 col-xs-6">
-        <a href="#" class="thumbnail">
-            <img alt="placeholder-image" src="images/placeholder.jpg" style="height: 180px; width: 100%; display: block;">
-        </a>
-    </div>
-</div>
+    {% include "partials/images.njk" %}
 {% endblock %}
 
 {% block scripts%}
     {{ super() }}
     {# include link to custtom js here #}
-
 {% endblock %}
