@@ -1,7 +1,7 @@
 {% extends "./_base_page.njk" %}
 
-{% set page_title = "New Dashboard" %}
-{% set page_actions = true %}
+{% set page_title = "Rita" %}
+{% set page_actions = false %}
 
 {% block header %}
 {# this comments ensures the header is loaded and not overridden #}
@@ -11,7 +11,9 @@
 
 {% block content %}
 {# content starts below #}
-    {% include "partials/images.njk" %}
+
+    {% include "partials/_table_per_provider.html.njk" %}
+  
 {% endblock %}
 
 {% block scripts%}
