@@ -22,3 +22,21 @@
   font-weight: 400;
   color: #333840;
 }
+.progress{
+height:5px;
+margin-bottom: 5px;
+}
+
+.onboarding{
+  border: solid 1px #e7e6e6;
+  border-radius: 1px;
+  padding:15px;
+}
+.onboarding i.fa-cube{
+  font-size:60px;
+}
+.onboarding i.fa-close{
+  font-size:30px;
+  margin-top: 15px;
+  color: #ccd1d9
+}
