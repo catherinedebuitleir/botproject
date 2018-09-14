@@ -55,10 +55,11 @@ margin-bottom: 5px;
 }
 
 .accountteam{
+  background-position: right -11px center;
   margin-left: -27px;
   height:59px;
   width:59px;
   border-radius:50%;
-  background-size: 100%;
-  background-image: url('../images/woman.png');
+  background-size: 136%;
+  background-image: url('../images/successgirl.png');
 }
