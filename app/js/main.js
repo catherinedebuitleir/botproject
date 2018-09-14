@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // Define the tour!
 var tour = {
   id: "hello-hopscotch",
@@ -82,4 +84,23 @@ var tour = {
 //     // here, you have your sum
 //     alert("Sum of all tiles: " + sum);
 //    });
-// });
+// });\
+
+
+$(document).ready(function($){
+  // a generic function for capturing values of forms
+  // https://api.jquery.com/serializeArray/
+  // object to store our for field results
+  let form_results = {};
+  // note we attach this function to any form by calling 'form
+  // if we wanted a named form: $('form[name="myFormName"]')
+  $( "form" ).submit(function( event ) {
+    var fields = $( this ).serializeArray();
+    var res = {};
+    $.each(fields, function (i, field) {
+      form_results[field.name] = field.value;
+    });
+    event.preventDefault();
+    console.log(form_results);
+  });
+});
