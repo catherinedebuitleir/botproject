@@ -4,7 +4,7 @@
     $('#wizardnext').click(function(e){
         e.preventDefault();
         //name the file you want to go to 
-        document.location.href = 'macros.html';
+        document.location.href = 'wizard2.html';
     });
    
 });
