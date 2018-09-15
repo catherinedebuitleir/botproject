@@ -32,7 +32,6 @@ $(document).ready(function($){
       // https://ciphertrick.com/2015/01/20/session-handling-using-jquery/
       console.log(form_results);
       $.session.set(session_key, form_results);
-
       // now load our new window
       window.location.href = 'wizard3.html';
     });
