@@ -86,7 +86,7 @@ var tour = {
   //    });
   // });\
 
-// forrm and store results across pages
+// form and store results across pages
   $(document).ready(function($){
     // a generic function for capturing values of forms
     // https://api.jquery.com/serializeArray/
