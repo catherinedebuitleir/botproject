@@ -6,31 +6,19 @@ $( document ).ready(function() {
         //on click second input - show third
        $('#level2 input').keyup(function() {
          // show third
-        $('#level3').show(); 
+        $('#level3').show();
         $('#level3 input').keyup(function() {
              // show fourth
             $('#level4').show();
             $('#level4 input').keyup(function() {
                  // show fifth
                 $('#level5').show();
-        
+
                 });
-    
+
             });
 
         });
 
     });
-
-    $('#myform').submit(function(e){
-        e.preventDefault();
-        //var inputs = $('#myform :inputs');
-        var ritavalues = $('#myform').serialize();
-        //var values = {};
-        //inputs.each(function(){
-          //  values[this.name] = $(this).val();
-        //});
-        alert(ritavalues);
-    });
-  
 });
