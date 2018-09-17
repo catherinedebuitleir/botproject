@@ -18,18 +18,7 @@
                     <h1>{{ page_title }}</h1>
                 </div>
                 {% if page_actions %}
-                <div class="page-actions" id="page_act">
-                    <div class="pull-right">
-                        <p id="page_action_edit" >
-                            <i id="page_act_edit" class="fas fa-pencil-alt"></i>
-                                Edit  <span class="divider"> | </span>
-                            <i id="page_act_old" class="fa fa-search"></i>
-                                Old Dashboard <span class="divider"> | </span>
-                            <i id="page_act_tour" class="fas fa-motorcycle"></i>
-                                Tour
-                        </p>
-                    </div>
-                </div>
+                    {% include "./page_components/_page_actions.njk" %}
                 {% endif %}
             </div>
         </header>
