@@ -18,14 +18,15 @@
                     <h1>{{ page_title }}</h1>
                 </div>
                 {% if page_actions %}
-                <div class="page-actions" id="page-actions">
+                <div class="page-actions" id="page_act">
                     <div class="pull-right">
-                        <p>
-                            <i class="fas fa-pencil-alt" aria-hidden="true"></i>
-                            Edit Dashboard
-                        <span class="divider"> | </span>
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                            View Old Dashboard
+                        <p id="page_action_edit" >
+                            <i id="page_act_edit" class="fas fa-pencil-alt"></i>
+                                Edit  <span class="divider"> | </span>
+                            <i id="page_act_old" class="fa fa-search"></i>
+                                Old Dashboard <span class="divider"> | </span>
+                            <i id="page_act_tour" class="fas fa-motorcycle"></i>
+                                Tour
                         </p>
                     </div>
                 </div>
