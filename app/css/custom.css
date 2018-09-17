@@ -11,10 +11,12 @@
 
 .page-actions {
   padding-top: 2.6rem;
+  padding-bottom: 2rem;
+  padding-right: 1.3rem;
+  margin: 0 0 1rem 0;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   color: #333840;
-  padding-bottom: 1rem;
 }
 .page-actions button {
   background: none;
