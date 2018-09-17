@@ -24,17 +24,17 @@ $(document).ready(function(){
             title: "Create a Dashboard",
             content: "If you don't find a dashboard from our selection, you can easily customise or create a new one from scratch.",
             target: "page_act_edit",
-            xOffset: -150,
-            yOffset: 12,
+            xOffset: -140,
+            yOffset: 5,
             arrowOffset: "center",
             placement: "bottom"
           },
           {
-            title: "Return to original Dashboard",
-            content: "Not ready to make the switch, simply return to your old dashbaord. Thank you.",
+            title: "Old Dashboard",
+            content: "Not ready to make the switch, simply return to your old dashbaord. Thank you for taking a look, we hope you will come back.",
             target: "page_act_old",
-            xOffset: -140,
-            yOffset: 12,
+            xOffset: -130,
+            yOffset: 5,
             arrowOffset: "center",
             placement: "bottom"
           },
@@ -43,7 +43,7 @@ $(document).ready(function(){
             content: "You can always take a tour, wherever you see this icon. Or <strong>talk to your account team </strong><i class='fas fa-link'></i> if you have questions.",
             target: "page_act_tour",
             xOffset: -250,
-            yOffset: 12,
+            yOffset: 5,
             arrowOffset: 242,
             placement: "bottom"
           }
@@ -64,4 +64,7 @@ $(document).ready(function(){
     //   });
     //   hopscotch.startTour(calloutMgr);
     hopscotch.startTour(tour);
+    $('#page_act_tour').click(function(){
+        hopscotch.startTour(tour);
+    });
 });
