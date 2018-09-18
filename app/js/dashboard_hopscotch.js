@@ -9,15 +9,10 @@ $(document).ready(function(){
         id: "hello-hopscotch",
         steps: [
           {
-            title: "New Dashboard",
-            content: "Welcome to your new dashbaord. Please take a look around.",
-            target: "page_head",
-            placement: "bottom"
-          },
-          {
             title: "Choose a Dashboard",
             content: "Click on this Drop down to select from one of our preconfigured dashboards. Or pick one from the page below. We think you can find one to suit your role.",
             target: "drop_arrow",
+            yOffset: -6,
             placement: "right"
           },
           {
