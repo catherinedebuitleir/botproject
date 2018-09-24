@@ -47,7 +47,7 @@ gulp.task('templates', ['move_html'], function() {
 //move html
 gulp.task('move_html', function() {
     return gulp
-    .src(['app/.temp_views' + '/*.html', '!' + 'app/.temp_views' +'/_*.html'])
+    .src(['app/.temp_views' + '/**/*.html', '!' + 'app/.temp_views' +'/_*.html'])
     .pipe(plumber())
     .pipe(gulp.dest('dist'))
     .pipe(reload({ stream: true }));
