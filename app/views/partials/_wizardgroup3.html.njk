@@ -1,1 +1,21 @@
-test
+<div class="row">
+    <div class="col-lg-3" style="padding:15px;background:#f4f5f4; border-radius:1px;">
+     <a class="pull-right" style="margin-top: 7px;" id="editlevels"><i class="fas fa-pencil-alt" style="color:#009abd;"></i> Edit Levels</a>
+      <h4>Group Levels</h4>
+      <ul style="list-style:none">
+      <li> <i class="fas fa-chevron-down" ></i> <i class="fas fa-square" style="color:#009abd;"></i> Department </li>
+       <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down" ></i> <i class="fas fa-square" style="color:lilac;"></i> Location </li>
+       <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fas fa-square" style="color:purple;"></i> Team</li>
+       </ul>       
+    </div>  
+    <div class="col-lg-9" >
+       {% include "_table_groups.html.njk" %}
+
+       <!--{% include "bootstrap_components/partials/_dropdown.njk" %}-->
+
+  
+    </div>
+</div>
+
+
+

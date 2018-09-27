@@ -22,15 +22,6 @@ $( document ).ready(function() {
 
     });
 
-    $('#myform').submit(function(e){
-        e.preventDefault();
-        //var inputs = $('#myform :inputs');
-        var ritavalues = $('#myform').serialize();
-        //var values = {};
-        //inputs.each(function(){
-          //  values[this.name] = $(this).val();
-        //});
-        alert(ritavalues);
-    });
+  
   
 });
