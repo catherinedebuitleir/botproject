@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
@@ -21,7 +23,7 @@ let path = {
     jquery: "./node_modules/jquery/dist/jquery.js",
     bootstrap: "./node_modules/bootstrap3/dist/js/bootstrap.js",
     hopscotch: "./node_modules/hopscotch/dist/js/hopscotch.js"
-}
+};
 
 let dist = {
     html: './dist/',
@@ -45,7 +47,7 @@ gulp.task('templates', ['move_html'], function() {
 //move html
 gulp.task('move_html', function() {
     return gulp
-    .src(['app/.temp_views' + '/*.html', '!' + 'app/.temp_views' +'/_*.html'])
+    .src(['app/.temp_views' + '/**/*.html', '!' + 'app/.temp_views' +'/_*.html'])
     .pipe(plumber())
     .pipe(gulp.dest('dist'))
     .pipe(reload({ stream: true }));
@@ -75,7 +77,7 @@ gulp.task('css', function() {
     .src([src.css, '/node_modules/hopscotch/dist/css/hopscotch.css'])
     .pipe(plumber())
     .pipe(gulp.dest(dist.css))
-    .pipe(reload({ stream: true }))
+    .pipe(reload({ stream: true }));
 });
 
 // Compile js

@@ -1,0 +1,44 @@
+                    <ul class="nav nav-tabs" style="margin-top:30px;">
+                        <li class="active" style="margin-bottom:15px">
+                            <a data-toggle="tab" href="#section1">
+                                
+                                Apps</a>
+                        </li>
+                        <li style="margin-bottom:15px">
+                            <a data-toggle="tab" href="#section2">
+                                <i class=""></i>
+                                Tenants and Subscriptions</a>
+                        </li>
+                    </ul>
+                    <br>
+        <div class="tab-content">
+            <div id="section1" class="tab-pane active fade in">
+                <!--Add content here-->
+               <!--  <div class="secondary-tabs-group">
+                                    <ul class="nav nav-tabs" id="tabs-secondary">
+                                        <li class="active"><a data-toggle="tab" href="#subsection1">2018</a></li>
+                                        <li><a data-toggle="tab" href="#subsection2"><i class="fa fa-fw fa-plus-circle"></i>Add Reporting Period</a></li>
+                                    </ul>
+                                </div>-->
+                        <div id="subsection1" class="tab-pane  fade in">
+                        
+                         {% include "_table_apps.html.njk" %}
+                
+                        </div>
+                        <div id="subsection2" class="tab-pane fade">
+                         
+               
+                        </div>
+                <!--End content here-->
+            </div>
+            <div id="section2" class="tab-pane  fade in">
+
+                <!--Add content here-->
+              
+           
+           
+    
+    
+            </div>
+     
+        </div>

@@ -13,11 +13,11 @@
 
 {% block content %}
 {# content starts below #}
-    {% include "partials/_images.njk" %}
+    {% include "partials/_dashboard.njk" %}
 {% endblock %}
 
 {% block scripts%}
     {{ super() }}
     {# include link to custtom js here #}
-    <script type='text/javascript' src='./js/dashboard_hopscotch.js'></script>
+    <script type='text/javascript' src='js/dash_basic.js'></script>
 {% endblock %}

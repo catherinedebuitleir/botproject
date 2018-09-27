@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 // Define the tour!
 var tour = {
   id: "hello-hopscotch",
@@ -82,4 +84,7 @@ var tour = {
 //     // here, you have your sum
 //     alert("Sum of all tiles: " + sum);
 //    });
-// });
+// });\
+
+
+
