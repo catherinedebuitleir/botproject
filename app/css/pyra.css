@@ -1168,6 +1168,10 @@ textarea::-webkit-input-placeholder {
 	color: #bd2532 !important;
 }
 
+.fa-info-circle {
+	color: #009abd !important;
+}
+
 /* table */
 
 .table {
@@ -1319,6 +1323,37 @@ tbody tr {
 .alert-danger .fa-times {
 	color: #e9a2a6;
 }
+
+.alert-warning {
+	border-radius: 1px;
+	background-color: #fef8f1;
+	border: 1px solid #fac096;;
+}
+
+.alert-warning .fa-times {
+	color: #fac096;
+}
+
+.alert-success {
+	border-radius: 1px;
+	background-color: #f5fbf7;
+	border: 1px solid #95d4ad;;
+}
+
+.alert-success .fa-times {
+	color: #95d4ad;
+}
+
+.alert-inform {
+	border-radius: 1px;
+	background-color: #eaf3f5;
+	border: 1px solid #8cccd4;;
+}
+
+.alert-inform .fa-times {
+	color: #8cccd4;
+}
+
 
 
 /* empty state */

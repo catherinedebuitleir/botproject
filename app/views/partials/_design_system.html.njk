@@ -314,13 +314,43 @@ width(%): class="w-10", class="w-25", class="w-50", class="w-75", class="w-100"
 <div class="alert alert-danger alert-dismissible" role="alert">
   <div class="row">
     <div class="col-md-9">
-      <strong><i class="fas fa-exclamation-triangle"></i> Well this is embarrassing…</strong><br>
+      <i class="fas fa-exclamation-triangle"></i><strong> Well this is embarrassing…</strong><br>
       <p class="mb-5 mt-5">Sorry, this is not working properly. We now know about this mistake and are working to fix it.<br>In the meantime, here is what you can do: </p>
       <ul>
       <li><i class="fas fa-sync-alt"></i> Refresh the page</li>
       <li><i class="far fa-clock"></i> Try again in 30 minutes</li>
       <li><i class="far fa-envelope"></i> Contact SoftwareOne</li>
       </ul>
+    </div>
+    <div class="col-md-3"><button type="button" class="close f-r" data-dismiss="alert" aria-label="Close"><i class="fas fa-times icon"></i></button></div>
+  </div>
+</div>
+
+<!-- Warning -->
+<div class="alert alert-warning alert-dismissible" role="alert">
+  <div class="row">
+    <div class="col-md-10">
+      <p><i class="fas fa-exclamation-circle"></i><strong> We’re really sorry!</strong> We could not find the latest data. You can continue working, or if you need the most recent data, you can try coming back later.  </p>
+    </div>
+    <div class="col-md-2"><button type="button" class="close f-r" data-dismiss="alert" aria-label="Close"><i class="fas fa-times icon"></i></button></div>
+  </div>
+</div>
+
+<!-- success -->
+<div class="alert alert-success alert-dismissible" role="alert">
+  <div class="row">
+    <div class="col-md-9">
+      <p><i class="fas fa-check-circle"></i><strong> Horray!</strong> We found the latest data. <a class="btn btn-link"><i class="fas fa-sync-alt"></i> Refresh the page</a></p>
+    </div>
+    <div class="col-md-3"><button type="button" class="close f-r" data-dismiss="alert" aria-label="Close"><i class="fas fa-times icon"></i></button></div>
+  </div>
+</div>
+
+<!-- Info -->
+<div class="alert alert-inform alert-dismissible" role="alert">
+  <div class="row">
+    <div class="col-md-9">
+      <p><i class="fas fa-info-circle"></i><strong> The data shown may not be the most recent.</strong> We will keep looking for the latest data and inform you when we find it. </p>
     </div>
     <div class="col-md-3"><button type="button" class="close f-r" data-dismiss="alert" aria-label="Close"><i class="fas fa-times icon"></i></button></div>
   </div>
