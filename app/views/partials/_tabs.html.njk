@@ -1,85 +1,46 @@
+<!-- Primary Tabs - Secondary are in the template_grid file -->
+<div class="primary-tabs mb-15">
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a data-toggle="tab" href="#tab1"><i class="far fa-file"></i> Tab</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tab2"><i class="far fa-file"></i> Tab</a></li>
+    <li role="presentation"><a data-toggle="tab" href="#tab3"><i class="far fa-file"></i> Tab</a></li>
+  </ul>
+</div>
 
-                    <ul class="nav nav-tabs">
-                        <li class="active">
-                            <a data-toggle="tab" href="#section1">
-                                <i class="fas fa-file"></i>
-                                Section 1</a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#section2">
-                                <i class="fas fa-shopping-cart"></i>
-                                Section 2</a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#section3">
-                                <i class="fas fa-edit"></i>
-                                Section 3</a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#section4">
-                                <i class="fas fa-truck"></i>
-                                Section 4</a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#section5">
-                                <i class="far fa-copy"></i>
-                                Section 5</a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#section6">
-                                <i class="far fa-comment-dots"></i>
-                                Section 6</a>
-                        </li>
-                        <li>
-                            <a data-toggle="tab" href="#section7">
-                                <i class="far fa-folder-open"></i>
-                                Section 7</a>
-                        </li>
-                    </ul>
-                    <br>
-        <div class="tab-content">
-            <div id="section1" class="tab-pane fade active in">
-                <!--Add content here-->
-                <p>Section 1 content goes here</p>
-            </div>
-            <div id="section2" class="tab-pane fade">
-                <!--Add content here-->
-                <p>Section 2 content goes here</p>
-            </div>
-            <div id="section3" class="tab-pane fade">
-                <!--Add content here-->
-                <p>Section 3 content goes here</p>
-            </div>
-            <div id="section4" class="tab-pane fade">
-                <!--Add content here-->
-   {% include "_table.html.njk" %}
-            </div>
-            <div id="section5" class="tab-pane fade">
-                <!--Add content here-->
-                <p>Section 5 content goes here</p>
-            </div>
-            <div id="section6" class="tab-pane fade">
-                <!--Add content here-->
-                <p>Section 6 content goes here</p>
-            </div>
-            <div id="section7" class="tab-pane fade">
-                <!--Add content here-->
-                <p>Section 7 content goes here</p>
-            </div>
-        </div>
-                                <div class="secondary-tabs-group">
-                                    <ul class="nav nav-tabs" id="tabs-secondary">
-                                        <li class="active"><a data-toggle="tab" href="#subsection1">Sub Section 1</a></li>
-                                        <li><a data-toggle="tab" href="#subsection2">Sub Section 2</a></li>
-                                    </ul>
-                                </div>
-                        <div id="subsection1" class="tab-pane fade active in">
-                        <!--Add content here-->
-                <p>Sub Section 1 content goes here</p>
-                        </div>
-                        <div id="subsection2" class="tab-pane fade">
-                        <!--Add content here-->
-                <p>Sub Section 2 content goes here</p>
-                        </div>
-                        
-
+<div class="tab-content mt-15">
+  <div id="tab1" class="tab-pane fade in active">
+    <!-- Secondary Tabs -->
+    <div class="secondary-tabs mb-15">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a data-toggle="tab" href="#subtab1"><i class="far fa-file"></i> Tab</a></li>
+        <li role="presentation"><a data-toggle="tab" href="#subtab2"><i class="far fa-file"></i> Tab</a></li>
+        <li role="presentation"><a data-toggle="tab" href="#subtab3"><i class="far fa-file"></i> Tab</a></li>
+      </ul>
+    </div>
+    <div class="tab-content mt-15">
+      <div id="subtab1" class="tab-pane fade in active">
+        <!-- Add content here -->
+        {% include "partials/_search.html.njk" %}
+        {% include "partials/_grid.html.njk" %}
+        {% include "partials/_modal.html.njk" %}
+        {% include "partials/_account_team.html.njk" %}
+      </div>
+      <div id="subtab2" class="tab-pane fade">
+        <h3>Tab 2</h3>
+        <p>Some content.</p>
+      </div>
+      <div id="subtab3" class="tab-pane fade">
+        <h3>Tab 3</h3>
+        <p>Some content.</p>
+      </div>
+    </div>
+  </div>
+  <div id="tab2" class="tab-pane fade">
+    <h3>Tab 2</h3>
+    <p>Some content.</p>
+  </div>
+  <div id="tab3" class="tab-pane fade">
+    <h3>Tab 3</h3>
+    <p>Some content.</p>
+  </div>
+</div>

@@ -26,14 +26,21 @@
         <!-- Botton naviagtion section -->
         <nav id="pyracloud-navigation">
             <div id="nav-content-bottom">
-                <img id="pyracloud-logo" src="images/pyracloud-Logo.png" alt="PyraCloud logo will link to the dashboard">
-                <ul id="menu-primary">
-                    <li>Dashboard</li>
-                    <li>Documents <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
-                    <li>Buy <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
-                    <li>Manage <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
-                    <li>Company <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
-                </ul>
+                <div class="row">
+                    <div class="col-md-6 mt-5">
+                        <img id="pyracloud-logo" src="images/pyracloud-logo-nav.png" alt="PyraCloud logo will link to the dashboard">
+                        <ul id="menu-primary">
+                            <li>Dashboard</li>
+                            <li>Documents <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                            <li>Buy <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                            <li>Manage <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                            <li>Company <i class="fa fa-chevron-down" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                         {% include "partials/_global_search.html.njk" %}
+                    </div>
+                </div>
             </div>
         </nav>
     </div> {# end nav #}

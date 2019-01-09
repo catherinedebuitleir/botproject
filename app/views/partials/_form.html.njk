@@ -1,19 +1,73 @@
-<form>
-  <div><input type="text" name="a" value="1" id="a"></div>
-  <div><input type="text" name="b" value="2" id="b"></div>
-  <div><input type="hidden" name="c" value="3" id="c"></div>
-  <div>
-    <textarea name="d" rows="8" cols="40">4</textarea>
+<!-- Disclaimer -->
+<div class="required mb-30">* Required fields</div>
+
+<!-- Basic -->
+<label for="basic-url mb-15"><span class="required">*</span> Title</label>
+<div class="input-group mb-15 w-50">
+  <input type="text" class="form-control" aria-describedby="basic-addon1">
+</div>
+
+<!-- Textarea -->
+<div class="form-group w-50">
+  <label for="comment"><span class="required">*</span> Description</label>
+  <textarea class="form-control" rows="5" id="comment" placeholder="Type your description here..."></textarea>
+</div>
+
+<!-- Username -->
+<label for="basic-url mb-15">Username</label>
+<div class="input-group mb-15 w-25">
+  <span class="input-group-addon" id="basic-addon1">@</span>
+  <input type="text" class="form-control" aria-describedby="basic-addon1">
+</div>
+
+<!-- Amount -->
+<label for="basic-url mb-15">Amount</label>
+<div class="input-group mb-15 w-120px">
+  <input type="text" class="form-control" placeholder="0.00" aria-describedby="basic-addon2">
+  <span class="input-group-addon" id="basic-addon2">USD</span>
+</div>
+
+<!-- Url -->
+<label for="basic-url mb-15">URL</label>
+<div class="input-group w-50 mb-15">
+  <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+</div>
+
+<!-- Telephone -->
+<label for="basic-url mb-30">Phone Number</label>
+    <div class="input-group mb-15 w-25">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-search dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ireland (+353) <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">+353</a></li>
+          <li><a href="#">+44</a></li>
+          <li><a href="#">+??</a></li>
+        </ul>
+      </div>
+      <input type="text" class="form-control" aria-label=".." class="form-control" value="870900446">
+    </div>
+
+<!-- Provider -->
+<div class="form-group w-25 mt-30">
+  <label for="sel1">Provider</label>
+  <select class="form-control" id="sel1" placeholder="-Any-">
+    <option selected value="" class="placeholder">-Any-</option>
+    <option value="1">AWS</option>
+    <option value="2">Azure</option>
+    <option value="3">Office 365</option>
+  </select>
+</div>
+
+<!-- Attachments -->
+<div class="form-group w-25 mb-30">
+  <label for="exampleInputFile">Attachments</label>
+  <div class="upload-files">
+    <button type="button" class="btn btn-primary"><i class="fas fa-upload"></i> Select Files...</button>
   </div>
-  <div><select name="e">
-    <option value="5" selected="selected">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-  </select></div>
-  <div>
-    <input type="checkbox" name="f" value="8" id="f">
-  </div>
-  <div>
-    <input type="submit" name="g" value="Submit" id="g">
-  </div>
-</form>
+  <h6>Maxiumum upload size is 6GB<h6>
+</div>
+
+<!-- Button -->
+<button type="button" class="btn btn-primary mr-15"><i class="fas fa-plus-circle"></i> Add New Item</button>
+<button type="button" class="btn btn-default"><i class="fas fa-times"></i> Cancel</button>

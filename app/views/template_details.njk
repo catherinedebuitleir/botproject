@@ -1,6 +1,6 @@
 {% extends "./_base_page.njk" %}
 
-{% set page_title = "Design System" %}
+{% set page_title = "Product: Microsoft Office 365 Enterprise E3" %}
 {% set page_actions = false %}
 
 {% block header %}
@@ -13,7 +13,10 @@
 
 {% block content %}
 {# content starts below #}
-    {% include "partials/_design_system.html.njk" %}
+    {% include "partials/_panel.html.njk" %}
+    {% include "partials/_tabs.html.njk" %}
+    {% include "partials/_grid.html.njk" %}
+    {% include "partials/_modal.html.njk" %}
 {% endblock %}
 
 {% block scripts%}

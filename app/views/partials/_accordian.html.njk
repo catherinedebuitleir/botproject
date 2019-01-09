@@ -1,0 +1,121 @@
+<!-- Accordians -->
+
+<!-- First Panel -->
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <i class="fas fa-check-circle not-started" id="checkOne"></i> Collapsible Group Item #1 <small>Secondary Text</small>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <!-- Disclaimer -->
+        <div class="required mb-30">* Required fields</div>
+
+        <!-- Basic -->
+        <label for="basic-url mb-15"><span class="required">*</span> Title</label>
+        <div class="input-group mb-15 w-50">
+        <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group w-50">
+        <label for="comment"><span class="required">*</span> Description</label>
+        <textarea class="form-control" rows="5" id="comment" placeholder="Type your description here..."></textarea>
+        </div>
+
+        <!-- Username -->
+        <label for="basic-url mb-15">Username</label>
+        <div class="input-group w-25">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+       <button type="button" class="btn btn-primary mr-15 mt-30" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" id="panel-one-next"><i class="fas fa-arrow-circle-right"></i> Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <i class="fas fa-check-circle not-started" id="checkTwo"></i> Collapsible Group Item #2 <small>Secondary Text</small>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <!-- Disclaimer -->
+        <div class="required mb-30">* Required fields</div>
+
+        <!-- Basic -->
+        <label for="basic-url mb-15"><span class="required">*</span> Title</label>
+        <div class="input-group mb-15 w-50">
+        <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group w-50">
+        <label for="comment"><span class="required">*</span> Description</label>
+        <textarea class="form-control" rows="5" id="comment" placeholder="Type your description here..."></textarea>
+        </div>
+
+        <!-- Username -->
+        <label for="basic-url">Username</label>
+        <div class="input-group w-25">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <button type="button" class="btn btn-primary mr-15 mt-30" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="panel-two-next"><i class="fas fa-arrow-circle-right"></i> Next</button>
+      </div>
+    </div>
+  </div>
+
+<!-- Third Panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <i class="fas fa-check-circle not-started" id="checkThree"></i> Collapsible Group Item #3 <small>Secondary Text</small>
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <!-- Disclaimer -->
+        <div class="required mb-30">* Required fields</div>
+
+        <!-- Basic -->
+        <label for="basic-url mb-15"><span class="required">*</span> Title</label>
+        <div class="input-group mb-15 w-50">
+        <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group w-50">
+        <label for="comment"><span class="required">*</span> Description</label>
+        <textarea class="form-control" rows="5" id="comment" placeholder="Type your description here..."></textarea>
+        </div>
+
+        <!-- Username -->
+        <label for="basic-url">Username</label>
+        <div class="input-group w-25">
+        <span class="input-group-addon" id="basic-addon1">@</span>
+        <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <button type="button" class="btn btn-primary mr-15 mt-30" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="panel-three-next"><i class="fas fa-arrow-circle-right"></i> Next</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+<!-- Final panel -->
+<div class="well">
+    <h4>Ready to submit?</h4>
+    <button type="button" class="btn btn-primary mt-5 mb-15" id="wizard-submit" disabled><i class="fas fa-check"></i> Submit</button>
+    <h6>Please complete the above sections to proceed.</h6>
+</div>

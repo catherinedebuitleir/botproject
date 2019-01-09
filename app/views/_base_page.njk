@@ -10,23 +10,25 @@
     <section class="gap"></section>
     <div class="container-fluid">
         <header>
-            <div id="breadcrumb">
-                <h5>You Are Here: <a href="#" class="breadcrumb-active">Home</a> > <span class="breadcrumb-current-page">{{ page_title }} </span></h5>
+            <div id="breadcrumb" class="mb-10">
+                <span class="youarehere">You Are Here: </span><span class="breadcrumb-text"><a href="#" class="breadcrumb-active">Home</a> > <span class="breadcrumb-current-page">{{ page_title }} </span></span>
             </div>
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-lg-8 col-md-8 col-sm-12">
                     <h1>{{ page_title }}</h1>
                 </div>
-                {% if page_actions %}
-                    {% include "./page_components/_page_actions.njk" %}
-                {% endif %}
+                <div class="col-lg-4 col-md-4 col-sm-6" style="margin-top: -10px;">
+                    {% if page_actions %}
+                        {% include "./page_components/_page_actions.njk" %}
+                    {% endif %}
+                </div>
             </div>
         </header>
         <!-- This is where the white page begins -->
         <div class="row">
             <div class="card">
             {% block content %}
-                {% include "./partials/_workbench.html.njk" %}
+                {% include "./partials/_styles.html.njk" %}
             {% endblock %}
             </div>
         </div>
