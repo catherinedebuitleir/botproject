@@ -1294,6 +1294,14 @@ tbody tr {
 	color: #989FA8;
 }
 
+.panel-group-white .panel-heading {
+	background-color: white;
+}
+
+.panel-group-white .panel-heading small {
+	margin-left: 30px;
+}
+
 /* aletrts */
 
 .alert-info {
