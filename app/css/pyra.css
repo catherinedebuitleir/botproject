@@ -1544,7 +1544,7 @@ tbody tr {
 	float: left;
 }
 
-.line {
+.entry  .line {
 	border-left: 1px solid #E7E6E6;
 	height: 59.9px;
 	width: 1px;
@@ -1555,7 +1555,7 @@ tbody tr {
 .entry .box {
 	border: 1px solid #E7E6E6;
 	padding: 10px 12px;
-	width: 1190px;
+	width: 1180px;
 	float: left;
 	margin: 5px 0px 0px 15px;
 }
