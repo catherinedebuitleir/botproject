@@ -1380,6 +1380,8 @@ tbody tr {
 
 .empty-state .lonely-text {
 	font-weight: 700;
+	font-size: 20px;
+	color: #989fa8;
 }
 
 /* stepper */
