@@ -1574,3 +1574,19 @@ tbody tr {
 	margin: 5px 5px 0px 0px;
 	color: #5a616b;
 }
+
+/* Badge */
+
+.badge {
+	border-radius: 1px;
+}
+
+.badge-success {
+	background-color: #25C060;
+}
+
+.badge-gray {
+	background-color: white;
+	color: #33383F;
+	border: 1px solid #E7E6E6;
+}
