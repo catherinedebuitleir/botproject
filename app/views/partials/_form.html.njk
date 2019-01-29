@@ -36,20 +36,66 @@
 
 <!-- Telephone -->
 <label for="basic-url mb-30">Phone Number</label>
-    <div class="input-group mb-15 w-25">
-      <div class="input-group-btn">
-        <button type="button" class="btn btn-search dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ireland (+353) <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#">+353</a></li>
-          <li><a href="#">+44</a></li>
-          <li><a href="#">+??</a></li>
-        </ul>
+<div class="input-group mb-15 w-25">
+  <div class="input-group-btn">
+    <button type="button" class="btn btn-search dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ireland (+353) <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#">+353</a></li>
+      <li><a href="#">+44</a></li>
+      <li><a href="#">+??</a></li>
+    </ul>
+  </div>
+  <input type="text" class="form-control" aria-label=".." class="form-control" value="870900446">
+</div>
+
+<!-- Toggle  -->
+<div class="mt-30 mb-15">
+  <label class="switch">
+    <input type="checkbox" checked>
+    <span class="slider round"></span>
+  </label>
+  <span class="ml-5" style="margin-top: 2px;position: absolute;">Active</span>
+</div>
+
+<!-- Radio Large -->
+<label for="basic-url">Radio Boxes</label>
+<div class="row radio-boxes">
+  <div class="col-md-3">
+    <div class="well-plain">
+      <div class="radio">
+      <label><input type="radio" name="optradio">Option 2</label>
+      <p>Explain what this option does so it is clear to the user.</p>
       </div>
-      <input type="text" class="form-control" aria-label=".." class="form-control" value="870900446">
     </div>
+  </div>
+  <div class="col-md-3">
+    <div class="well-plain selected">
+      <div class="radio">
+      <label><input type="radio" name="optradio" checked>Selected Option 2</label>
+      <p>Explain what this option does so it is clear to the user.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="well-plain">
+      <div class="radio">
+      <label><input type="radio" name="optradio">Option 2</label>
+      <p>Explain what this option does so it is clear to the user.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="well-plain">
+      <div class="radio">
+      <label><input type="radio" name="optradio">Option 2</label>
+      <p>Explain what this option does so it is clear to the user.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Provider -->
-<div class="form-group w-25 mt-30">
+<div class="form-group w-25 mt-15">
   <label for="sel1">Provider</label>
   <select class="form-control" id="sel1" placeholder="-Any-">
     <option selected value="" class="placeholder">-Any-</option>
