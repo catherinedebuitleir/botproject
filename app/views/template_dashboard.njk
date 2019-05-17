@@ -1,7 +1,7 @@
-{% extends "./_base_page.njk" %}
+{% extends "./_base_page_dashboard.njk" %}
 
-{% set page_title = "Design System" %}
-{% set page_actions = true %}
+{% set page_title = "Dashboard - Procurement" %}
+{% set page_actions = false %}
 
 {% block header %}
 {# this comments ensures the header is loaded and not overridden #}
@@ -13,9 +13,7 @@
 
 {% block content %}
 {# content starts below #}
-    {% include "partials/_design_system.html.njk" %}
-    {% include "partials/_bot.html.njk" %}
-    {% include "partials/_modal_report.html.njk" %}
+    {% include "partials/_tiles_dashboard.html.njk" %}
 {% endblock %}
 
 {% block scripts%}

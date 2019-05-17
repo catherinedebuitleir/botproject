@@ -415,6 +415,7 @@ ul {
 	padding: 30px;
 	margin-bottom: 0px;
 	height: 178px;
+	box-shadow: 1px 1px 4px 0 #ccd1d9;
 }
 
 .well-upselling h3, .well-upselling h4, .well-upselling h5, .well-upselling p {
@@ -1097,14 +1098,162 @@ textarea::-webkit-input-placeholder {
 
 .pyra-tile {
 	cursor: pointer;
+	
 }
 
 .nav-tile-positive {
-	border: 1px solid #989fa8;
+	border: 1px solid #ccd1d9;
+	background-color: white;
 	border-radius: 1px;
 	padding: 15px;
 	height: 178px;
+	color: white;
 	position: relative;
+	box-shadow: 1px 1px 4px 0 #ccd1d9;
+}
+
+.nav-tile-positive:hover {
+	border: 1px solid #ccd1d9;
+	background-color: #F5F5F4;
+	border-radius: 1px;
+	padding: 15px;
+	height: 178px;
+	color: white;
+	position: relative;
+}
+
+.nav-tile-positive h4 {
+	color: #272a2d;
+	left: 15px;
+	bottom: 15px;
+	position: absolute;
+	width: 140px;
+}
+
+.nav-tile-positive .module-icon {
+	color: #979ea8;
+	font-size: 36px;
+	margin-top: 30px;
+}
+
+.nav-tile-positive .nav-arrow {
+	color: #92c6d1;
+	font-size: 26px;
+	right: 15px;
+	bottom: 15px;
+	position: absolute;
+}
+
+.nav-tile-positive-counter {
+	border: 1px solid #ccd1d9;
+	background-color: white;
+	border-radius: 1px;
+	padding: 15px;
+	height: 178px;
+	color: white;
+	position: relative;
+	box-shadow: 1px 1px 4px 0 #ccd1d9;
+}
+
+.nav-tile-positive-counter:hover {
+	border: 1px solid #ccd1d9;
+	background-color: #F5F5F4;
+	border-radius: 1px;
+	padding: 15px;
+	height: 178px;
+	color: white;
+	position: relative;
+}
+
+.nav-tile-positive-counter h4 {
+	color: #272a2d;
+	left: 15px;
+	top: 15px;
+	position: absolute;
+	width: 140px;
+}
+
+.nav-tile-positive-counter .module-icon {
+	color: #979ea8;
+	font-size: 36px;
+	margin-top: 30px;
+	bottom: 5px;
+	position: absolute;
+}
+
+.nav-tile-positive-counter .nav-arrow {
+	color: #92c6d1;
+	font-size: 26px;
+	right: 15px;
+	bottom: 15px;
+	position: absolute;
+}
+
+.nav-tile-positive-counter-warning .line {
+	width: 158px;
+	height: 1px;
+	background-color: #ccd1d9;
+	bottom: 50px;
+	position: absolute;
+}
+
+.nav-tile-positive-counter-warning {
+	border: 1px solid #ccd1d9;
+	background-color: white;
+	border-radius: 1px;
+	padding: 15px;
+	height: 178px;
+	color: white;
+	position: relative;
+	box-shadow: 1px 1px 4px 0 #ccd1d9;
+}
+
+.nav-tile-positive-counter-warning:hover {
+	border: 1px solid #ccd1d9;
+	background-color: #F5F5F4;
+	border-radius: 1px;
+	padding: 15px;
+	height: 178px;
+	color: white;
+	position: relative;
+}
+
+.nav-tile-positive-counter-warning h4 {
+	color: #272a2d;
+	left: 15px;
+	top: 15px;
+	position: absolute;
+	width: 140px;
+}
+
+.nav-tile-positive-counter-warning .module-icon {
+	color: #979ea8;
+	font-size: 36px;
+	margin-top: 30px;
+	bottom: 50px;
+	position: absolute;
+}
+
+.nav-tile-positive-counter-warning .nav-arrow {
+	color: #92c6d1;
+	font-size: 26px;
+	right: 15px;
+	bottom: 15px;
+	position: absolute;
+}
+
+.nav-tile-positive-counter-warning hr {
+	font-size: 26px;
+	bottom: 40px;
+	position: absolute;
+}
+
+.nav-tile-positive-counter-warning p {
+	font-size: 12px;
+	left: 15px;
+	bottom: 18px;
+	position: absolute;
+	color: #5a616b;
 }
 
 .nav-tile-negative {
@@ -1115,6 +1264,7 @@ textarea::-webkit-input-placeholder {
 	height: 178px;
 	color: white;
 	position: relative;
+	box-shadow: 1px 1px 4px 0 #ccd1d9;
 }
 
 .nav-tile-negative:hover {
@@ -1132,7 +1282,7 @@ textarea::-webkit-input-placeholder {
 	left: 15px;
 	bottom: 15px;
 	position: absolute;
-	width: 80px;
+	width: 140px;
 }
 
 .nav-tile-negative .module-icon {
@@ -1233,7 +1383,7 @@ button .fa-square {
 }
 
 .btn-counter-danger:hover {
-s	background-color: #E9A2A6;
+	background-color: #E9A2A6;
 }
 
 .btn-counter-danger:active, .btn-counter-danger:focus  {
@@ -1936,4 +2086,163 @@ th .fa-filter:hover {
 .popover-content hr {
 	margin-right: -10px;
 	margin-left: -10px;
+}
+
+/* Bot */
+
+/* Add your custom css here */
+
+.chatbot {
+	position:fixed;
+	bottom:2%;
+	right:1%;
+	z-index: 100;
+}
+
+.chatbot .circle {
+	height: 70px;
+	width: 70px;
+	background-color: #009ABD;
+	-webkit-box-shadow: 10px 5px 16px 0px rgba(222,222,222,1);
+	-moz-box-shadow: 10px 5px 16px 0px rgba(222,222,222,1);
+	box-shadow: 10px 5px 16px 0px rgba(222,222,222,1);
+	border-radius:50%;
+	position:fixed;
+	bottom:2%;
+	right:1%;
+}
+
+.chatbot .circle:hover { 
+	cursor: pointer;
+	background-color: #318CA1;
+}
+
+.chatbot .circle i { 
+	color: white;
+	font-size: 35px;
+	text-align: center;
+	margin: 16px 0px 0px 18px;
+}
+
+.hidden {
+	display: none;
+}
+
+.chatwindow {
+	margin-bottom: 0px;
+	margin-top: 70px;
+	max-height: 400px;
+	min-height: 100px;
+	width: 400px;
+	height: auto;
+	background-color: white;
+	border-radius: 1px;
+	padding: 15px;
+	border: 1px solid #F5F5F4;
+	border-bottom-width: 0px;
+}
+
+.suggestionwindow {
+	width: 400px;
+	max-height: 300px;
+	background-color: white;
+	border-radius: 1px;
+	padding: 15px;
+	margin: 0px 0px;
+}
+
+.typewindow {
+	-webkit-box-shadow: 10px 5px 16px 0px rgba(222,222,222,1);
+	-moz-box-shadow: 10px 5px 16px 0px rgba(222,222,222,1);
+	box-shadow: 10px 5px 16px 0px rgba(222,222,222,1);
+	margin-bottom: 80px;
+	margin-top: 10px;
+	width: 400px;
+	min-height: 50px;
+	max-height: 150px;
+	background-color: white;
+	border-radius: 1px;
+	padding: 15px;
+	border: 1px solid #F5F5F4;
+}
+
+.comment-by-bot {
+	padding: 15px;
+	background-color: #F5F5F4;
+	border-radius: 5px;
+	width: 80%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+.comment-by-user {
+	padding: 10px 10px 8px 10px;
+	background-color: #009abd;
+	border-radius: 5px;
+	width: 80%;
+	float: right;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.suggestionwindow .btn-default{ 
+	max-width: 100%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	float: right;
+}
+
+.scrollable {
+	overflow: auto;
+	background-color: white;
+	border: 1px solid #E7E6E6;
+	-webkit-box-shadow: 10px 5px 16px 0px rgba(222,222,222,1);
+	-moz-box-shadow: 10px 5px 16px 0px rgba(222,222,222,1);
+	box-shadow: 10px 5px 16px 0px rgba(222,222,222,1);
+	padding-bottom: 10px;
+	max-height: 500px;
+	min-height: 300px;
+}
+
+.typewindow .form-control {
+	border: none;
+}
+
+.typewindow i {
+	font-size: 20px;
+	color: #CCD1D9;
+	margin-top: 6px;
+}
+
+.chatbot .header {
+	background-color: #009abd;
+	padding: 15px;
+	color: white;
+	position: fixed;
+	width: 400px;
+}
+
+.chatbot .header h4, .chatbot .header h5, .chatbot .header small {
+	color: white;
+}
+
+.chatbot .header small {
+	color: #F5F5F4;
+	font-size: 10px;
+}
+
+.avatar {
+	height: 40px;
+	border-radius: 50%;
+	padding: 5px;
+	background-color: #E7E6E6;
+}
+
+.header .fa-times {
+	font-size: 20px;
+	margin-right: 0px;
+	margin-top: 12px;
+	float: right;
+	color: #EAF3F5;
 }

@@ -1,0 +1,55 @@
+<div class="chatbot">
+<div id="chatboxes" hidden>
+  <div class="scrollable">
+    <div class="header">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="circle-ava"><img src="images/avatar.png" class="respsonsive avatar"></div>
+        </div>
+        <div class="col-lg-7" style="margin-left: -10px;">
+          <h4>PyraBot</h4>
+          <p><small>Typically replies instantly</small></p>
+        </div>
+        <div class="col-lg-3">
+          
+        </div>
+      </div>
+    </div>
+    <div class="chatwindow">
+        <div class="">
+          <div class="comment-by-bot">
+            Hello 👋<br><br>
+            What would you like to do today?
+          </div>
+        </div>
+        <div class="end">
+        </div>
+    </div>
+    <div class="suggestionwindow">
+        <a class="btn btn-default" id="monthlyspend"  onclick="spend()">What did I spend last month?</a>
+        <a class="btn btn-default monthlyprediction" onclick="prediction()">What is my predicted spend for next month?</a>
+        <a class="btn btn-default" id="supportticket"  onclick="support()">I want to submit a support ticket</a>
+        <div class="end-suggestions">
+        </div>
+    </div>
+  </div>
+  <div class="typewindow">
+    <div class="row">
+      <div class="col-lg-10">
+        <!-- Basic -->
+        <div class="input-group mb-0 w-100">
+          <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Write your message here...">
+        </div>
+      </div>
+      <div class="col-lg-1">
+        <i class="fas fa-paperclip"></i>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <a class="circle" id="comment" href="">
+    <i class="fas fa-comment" id="bubble"></i>
+    <i class="fas fa-times pl-5" id="close" style="display: none;"></i>
+  </a>
+</div>
