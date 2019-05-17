@@ -1,0 +1,446 @@
+<!-- Modal -->
+<div class="modal fade modal-schedule" id="modalReport" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+        <p class="modal-title">Create New Report</p>
+      </div>
+      <div class="modal-body">
+          <div id="quickcontent">
+          <h4 class="mt-0">Select delivery and frequency</h4>
+          <hr>
+<div>
+  <div class="row">
+    <div class="col-lg-5">
+      <label for="sel1">Method</label><br>
+      <a class="btn btn-default active" style="margin-right: -5px" id="schedule-download">Download</a>
+      <a class="btn btn-default ml-0" style="margin-right: -5px" id="schedule-email">Email</a>
+      <a class="btn btn-default ml-0" id="schedule-ftp">sFTP</a>
+    </div>
+  </div>
+  <div class="form-group mt-15" id="schedule-recipents" hidden>
+    <!-- Basic -->
+    <label for="basic-url mb-15 mt-15">To</label>
+    <div class="input-group mb-15 w-50 mt-5">
+      <input type="text" class="form-control" aria-describedby="basic-addon1" value="will.smith@adastraflex.com">
+    </div>
+    <!-- Basic -->
+    <label for="basic-url mb-15 mt-15">Cc</label>
+    <div class="input-group mb-15 w-50 mt-5">
+      <input type="text" class="form-control" aria-describedby="basic-addon1" value="">
+    </div>
+  </div>
+  <div class="form-group mt-15" id="ftp-list" hidden>
+    <div class="row">
+      <div class="col-lg-8">
+        <table style="width:100%" class="ftp-grid">
+          <tr>
+            <th style="width: 0px;"></th>
+            <th style="margin-left: 10px;">Host</th>
+            <th>Username</th>
+            <th>Folder</th> 
+            <th>Action</th>
+          </tr>
+          <tr class="active">
+            <td>
+              <div class="radio">
+                <label><input type="radio" name="ftpradio" checked="checked" checked></label>
+              </div>
+            </td>
+            <td>ftp.softwareone.com</td>
+            <td>sarah.smith@adastraflex.com</td>
+            <td>/home/files/invoices</td> 
+            <td><a href="#" class="btn btn-link-action interactive" data-toggle="modal" data-target="#myModalEdit"><i class="fas fa-pencil-alt"></i> Edit</a><span class="seperator">|</span><a class="bt btn-link-action"><i class="far fa-trash-alt"></i> Delete</a></td>
+          </tr>
+          <tr>
+            <td>
+              <div class="radio">
+                <label><input type="radio" name="ftpradio"></label>
+              </div>
+            </td>
+            <td>ftp.softwareone.com</td>
+            <td>will.smith@adastraflex.com</td>
+            <td>/my/saved/folder/invoices</td> 
+            <td><a href="#" class="btn btn-link-action" data-toggle="modal" data-target="#myModalEdit"><i class="fas fa-pencil-alt"></i> Edit</a><span class="seperator">|</span><a class="bt btn-link-action"><i class="far fa-trash-alt"></i> Delete</a></td>
+          </tr>
+        </table>  
+        <td colspan="3"><a class="btn btn-link mt-15 interactive" data-toggle="modal" data-target="#myModalNew"><i class="fas fa-plus-circle"></i> Add New sFTP</a></td>
+      </div>
+    </div>
+  </div>
+<label for="sel1" class="mt-30">Recurrence</label>
+<div class="boxed">
+  <div class="row">
+    <div class="col-lg-12">
+      <label class="radio-inline active"><input type="radio" name="optradio" value="onceoff" checked>Run Once</label>
+      <label class="radio-inline"><input type="radio" name="optradio" value="off">Off</label>
+      <label class="radio-inline"><input type="radio" name="optradio" value="daily">Daily</label>
+      <label class="radio-inline"><input type="radio" name="optradio" value="weekly">Weekly</label>
+      <label class="radio-inline"><input type="radio" name="optradio" value="monthly">Monthly</label>
+    </div>
+  </div>
+  <div class="row mb-0">
+    <div id="frequent" class="mt-15" hidden>
+      <div class="col-lg-3 mt-0">
+        <form>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-4 col-form-label" style="margin-top: 17px;">Every&nbsp;&nbsp;</label>
+            <div class="col-sm-6">
+              <input class="form-control" type="number" value="1" id="example-number-input" style="margin-top: 10px;">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-2 mt-15">
+        <p style="margin-top: 2px; margin-left: -35px;" id="numberof">Day(s)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Provider -->
+  <div id="weekly-schedule" hidden>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="form-group mt-5">
+          <div class="col-lg-5 ml-0 pl-0">
+            <div class="form-group mt-0">
+              <label for="sel1">Day of the week</label><br>
+              <div class="btn-group btn-grouped btn-group-toggle mr-15" data-toggle="buttons">
+                <label class="btn btn-default">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> S
+                </label>
+                <label class="btn btn-default active">
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> M
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> T
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> W
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> T
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> F
+                </label>
+                <label class="btn btn-default">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> S
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" style="margin-left: -55px;">
+            <div class="form-group col-md-3 pl-0">
+              <label for="time">Time</label>
+              <select id="inputState" class="form-control">
+                <option selected>09:00</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-8 pl-5">
+              <label for="inputState">Time Zone</label>
+              <select id="inputState" class="form-control" class="form-control">
+                <option selected>(UTC) Coordinated Universal Time </option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Time -->
+        <div class="form-group mt-0 w-200px">
+          <label for="time">Start Date</label>
+          <input class="form-control w-100" type="date" value="2019-05-28" id="example-datetime-local-input">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Include Weekends </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="daterange-schedule" hidden>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="form-group mt-5">
+          <div class="col-lg-3 ml-0 pl-0">
+            <div class="form-group mt-0 w-200px">
+              <label for="time">Start Date</label>
+              <input class="form-control w-100" type="date" value="2019-05-28" id="example-datetime-local-input">
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="form-group col-md-4 pl-15">
+              <label for="time">Time</label>
+              <select id="inputState" class="form-control">
+                <option selected>09:00</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-6 pl-0">
+              <label for="inputState">Time Zone</label>
+              <select id="inputState" class="form-control" class="form-control">
+                <option selected>(UTC) Coordinated Universal Time </option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="monthly-schedule" hidden>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="form-group mt-5">
+          <div class="col-lg-2 ml-0 pl-0">
+            <div class="form-group mt-0">
+              <label for="time">On</label>
+              <div class="dropdown mt-0">
+                <button class="btn btn-dropdown dropdown-toggle w-100" type="button" data-toggle="dropdown">Day</a>
+                  <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Day</a></li>
+                  <li><a href="#">First</a></li>
+                  <li><a href="#">Second</a></li>
+                  <li><a href="#">Third</a></li>
+                  <li><a href="#">Fourth</a></li>
+                  <li><a href="#">Last</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="form-group mt-0">
+              <label for="time">Day</label>
+              <div class="dropdown mt-0">
+                <button class="btn btn-dropdown dropdown-toggle w-100" type="button" data-toggle="dropdown">1</a>
+                  <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">6</a></li>
+                  <li><a href="#">7</a></li>
+                  <li><a href="#">8</a></li>
+                  <li><a href="#">9</a></li>
+                  <li><a href="#">...</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-group col-md-4">
+              <label for="time">Time</label>
+              <select id="inputState" class="form-control">
+                <option selected>09:00</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="form-group col-md-8">
+              <label for="inputState">Time Zone</label>
+              <select id="inputState" class="form-control" class="form-control">
+                <option selected>(UTC) Coordinated Universal Time </option>
+                <option>...</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="form-group mt-5">
+          <div class="col-lg-4 pl-0">
+            <div class="form-group mt-0 w-100">
+              <label for="time">Start Date</label>
+              <input class="form-control w-100" type="date" value="2019-05-28" id="example-datetime-local-input">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+          <h4 class="mt-30">Select report type</h4>
+          <hr>
+          <!-- Provider -->
+          <div class="form-group">
+            <label for="sel1">Report View</label><br>
+            <span class="badge badge-tag" style="border: 1px solid #F5F5F4; background-color: #FFFF;"><p>Home ><b> Invoices</b></p></span>
+          </div>
+          <!-- Provider -->
+          <div class="form-group mt-15">
+            <label for="sel1">Filter by</label><br>
+            <span class="badge badge-tag"><i class="fas fa-times"></i> Date Range: Last Year</span>
+          </div>
+        <div class="mb-15 mt-15" id="rolling" hidden>
+          <div class="row">
+            <div class="col-md-12">
+              <p><i class="fas fa-info-circle"></i><strong> Rolling Dates.</strong>  The date range will be speciifed at run time.</p>
+              <p class="mt-5">
+                <ul class="normal-list">
+                  <li><b>Next Report:</b> <span id="firstreport">Tuseday XXth May, 2019 at 9:00 AM 2019 for the date range from the XXth of April - XXth of May.</span></li>
+                </ul>
+              </p>
+            </div>
+          </div>
+        </div>
+          <!-- Area -->
+          <div class="form-group w-50" hidden>
+            <label for="sel1"><span class="required">*</span> Report Type</label>
+            <select class="form-control" id="sel1" placeholder="-Any-">
+              <option value="">Invoice Header Details</option>
+              <option value="3">Invoice Header Details and Line Items</option>
+              <option value="3">Original Documents (PDFs in Zip)</option>
+              <option value="4">License Certificates (PDFs in Zip)</option>
+            </select>
+          </div>
+          <!-- Format -->
+          <div class="form-group mt-15">
+            <label for="sel1">Format</label><br>
+            <div class="btn-group btn-grouped btn-group-toggle mr-15" data-toggle="buttons">
+              <label class="btn btn-default active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> CSV
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Excel
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options" id="option2" autocomplete="off"> PDF
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options" id="option2" autocomplete="off"> XML
+              </label>
+              <label class="btn btn-default">
+                <input type="radio" name="options" id="option2" autocomplete="off"> JSON
+              </label>
+            </div>
+          </div>
+          <h4 class="mt-30">Edit name</h4>
+          <hr>
+          <span class="required" hidden>* Required Fields</span>
+          <!-- Basic -->
+          <label for="basic-url mb-15"><span class="required">*</span> Report Name</label>
+          <div class="input-group mb-5 w-50">
+            <input type="text" class="form-control mb-15" aria-describedby="basic-addon1" value="Invoice Header Details">
+          </div>
+          <small class="mt-0 mb-15" style="margin-top: 0px;" hidden>File Name: chargebacks_header_deatils_yyyy-mm-dd.csv</small> <!-- Area -->
+          <div class="">
+            <div class="form-group w-50" hidden>
+              <label for="sel1"><span class="required">*</span> Area</label>
+              <select class="form-control" id="sel1" placeholder="-Any-">
+                <option value="" selected>Consumption</option>
+                <option value="3">Finance</option>
+                <option value="3">Procurement</option>
+                <option value="3">Product Catalog</option>
+                <option value="2">Software Asset Management</option>
+                <option value="2">SoftwareONE</option>
+              </select>
+            </div>
+            <!-- Area -->
+            <div class="form-group w-50" hidden>
+              <label for="sel1"><span class="required">*</span> Type</label>
+              <select class="form-control" id="sel1" placeholder="-Any-">
+                <option value="">Special Quote Requests</option>
+                <option value="3">Quotes</option>
+                <option value="3">Orders</option>
+                <option value="" selected>Invoices</option>
+                <option value="">Shipments</option>
+                <option value="">Credit Memos</option>
+                <option value="">...Make this multi choice?</option>
+              </select>
+            </div>
+            <!-- Area -->
+            <div class="form-group w-50 mt-15" hidden>
+              <label for="sel1"><span class="required">*</span> Show</label>
+              <select class="form-control" id="sel1" placeholder="-Any-">
+                <option value="">Details</option>
+                <option value="3">Details and Line Items</option>
+                <option value="3">Original Document</option>
+              </select>
+            </div>
+          </div>
+        <br>
+          <!-- Onboarding -->
+          <!-- Basic -->
+        </div>
+        <div id="addftpmodal" hidden>
+          <a class="btn btn-link" id="backtoreport"><i class="fas fa-chevron-left"></i> Back to Create New Report</a><br><br><br>
+          <span class="required">* Required Fields</span>
+          <div class="form-group mt-15" id="ftp-add">
+            <div class="row">
+              <div class="col-lg-6">
+                <!-- Provider -->
+                <div class="form-group mt-0">
+                  <label for="sel1"><span class="required">*</span> Host</label>
+                  <input type="number" class="form-control" aria-describedby="basic-addon1" value="">
+                </div>
+              </div>
+              <div class="col-lg-3">
+                <!-- Basic -->
+                <label for="basic-url mb-15"><span class="required">*</span> Port</label>
+                <div class="input-group mb-15 w-100">
+                  <input type="number" class="form-control" aria-describedby="basic-addon1" value="">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <!-- Basic -->
+                <label for="basic-url mb-15"><span class="required">*</span> Username</label>
+                <div class="input-group mb-15 w-100">
+                  <input type="text" class="form-control" aria-describedby="basic-addon1" value="">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <!-- Basic -->
+                <label for="basic-url mb-15"><span class="required">*</span> Password</label>
+                <div class="input-group mb-15 w-100">
+                  <input type="password" name="pwd" maxlength="8" class="form-control" aria-describedby="basic-addon1" value="">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <!-- Basic -->
+                <label for="basic-url mb-15"><span class="required">*</span> Directory</label>
+                <div class="input-group mb-15 w-100">
+                  <input type="text" class="form-control" aria-describedby="basic-addon1" value="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="f-l">Looking for more options? <a class="btn btn-link" onclick="location.href = 'create_report_consumption.html';"><i class="fas fa-arrow-circle-right"></i> Go to Advanced Reporting</a></p>
+        </div>
+      </div>
+      <div class="row mt-15">
+        <div class="col-lg-12">
+          <a class="btn btn-default f-r" data-dismiss="modal"><i class="fas fa-times"></i> Cancel</button>
+            <a class="btn btn-primary f-r mr-15" data-dismiss="modal" style="" id="run-report-toggle"><i class="fas fa-play"></i> Run</a>
+            <a class="btn btn-primary f-r mr-15" id="addnewftpbutton" style="display: none;"><i class="fas fa-plus-circle"></i> Add New sFTP</a>
+            <a class="btn btn-primary f-r mr-15" data-dismiss="modal" id="create-report-toggle" style="display: none;"><i class="fas fa-check"></i> Create</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

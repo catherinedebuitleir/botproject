@@ -1,7 +1,7 @@
 {% extends "./_base_page.njk" %}
 
 {% set page_title = "Design System" %}
-{% set page_actions = false %}
+{% set page_actions = true %}
 
 {% block header %}
 {# this comments ensures the header is loaded and not overridden #}
@@ -14,6 +14,7 @@
 {% block content %}
 {# content starts below #}
     {% include "partials/_design_system.html.njk" %}
+    {% include "partials/_modal_report.html.njk" %}
 {% endblock %}
 
 {% block scripts%}

@@ -83,6 +83,20 @@ $(document).ready(function($) {
   });
 
   // Search - Expandable
+  $( "#show-filters" ).click(function() {
+    $( "#search-main" ).show();
+    $( "#hide-filters" ).show();
+    $( "#show-filters" ).hide();
+    $( "#collapsed-filters" ).hide();
+  });
+  
+  $( "#hide-filters" ).click(function() {
+    $( "#search-main" ).hide();
+    $( "#hide-filters" ).hide();
+    $( "#show-filters" ).show();
+    $( "#collapsed-filters" ).show();
+  });
+
   $( "#search-show-more" ).click(function() {
     $( "#search-show-less" ).show();
     $( "#search-show-more" ).hide();
@@ -94,6 +108,15 @@ $(document).ready(function($) {
     $( "#search-show-less" ).hide();
     $( "#search-expanded" ).hide();
   });
+
+  $('[data-toggle="popover"]').popover({
+    html : true, 
+    trigger: 'focus',
+    content: function() {
+      return $('#popover_content_wrapper').html();
+    }
+  });
+
 
 });
 

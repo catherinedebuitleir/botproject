@@ -1,7 +1,17 @@
 <!-- Advanced Search -->
 <div class="advanced-search mb-15">
-  <button type="button" class="btn btn-link mb-5"><i class="fas fa-chevron-down"></i> Hide search</button>
-  <div class="well">
+  <div class="row">
+    <div class="col-lg-6">
+      <a type="button" class="btn btn-link mb-5" style="display: none;" id="hide-filters"><i class="fas fa-chevron-down"></i> Hide search</a>
+      <div id="filters-selected"><a type="button" class="btn btn-link mb-5 mt-5" id="show-filters"><i class="fas fa-chevron-right"></i> Show search</a>
+      <span id="collapsed-filters"><span class="seperator mt-5">| <span class="search-text">Search by</span> </span>
+      <span class="badge badge-tag"><i class="fas fa-times"></i> Provider: Microsoft</span></span></div>
+    </div>
+    <div class="col-lg-6 ta-r">
+      <button type="button" class="btn btn-link mb-5"><i class="fas fa-heart"></i> Saved Searches (2)</button>
+    </div>
+  </div>
+  <div class="well" id="search-main" hidden>
     <div class="row">
       <div class="col-md-6">
         <label for="basic-url">Search Products</label>
@@ -37,9 +47,14 @@
       </div>
     </div>
     <div class="row mt-15">
-      <div class="col-md-12">
-        <button type="button" class="btn btn-link" id="search-show-more"><i class="fas fa-chevron-right"></i> Show filters</button>
-        <button type="button" class="btn btn-link" id="search-show-less" style="display: none;"><i class="fas fa-chevron-down"></i> Show less</button>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-link mt-15" id="search-show-more"><i class="fas fa-chevron-right"></i> Show filters</button>
+        <button type="button" class="btn btn-link mt-15" id="search-show-less" style="display: none;"><i class="fas fa-chevron-down"></i> Show less</button>
+      </div>
+      <div class="col-md-6">
+        <button type="button" class="btn btn-default mr-0 f-r"><i class="fas fa-times"></i> Reset</button>
+        <button type="button" class="btn btn-primary mr-15 f-r"><i class="fas fa-search"></i> Search</button>
+        <button type="button" class="btn btn-link mr-15 f-r mt-10"><i class="fas fa-save"></i> Save Search</button>
       </div>
     </div>
   </div>
