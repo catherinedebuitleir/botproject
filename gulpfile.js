@@ -5,8 +5,8 @@ const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
 const njkRender = require('gulp-nunjucks-render');
 const plumber = require('gulp-plumber');
-const imagemin = require('gulp-imagemin');
-const cache = require('gulp-cache');
+// const imagemin = require('gulp-imagemin');
+// const cache = require('gulp-cache');
 
 let reload = browserSync.reload;
 
@@ -56,7 +56,7 @@ gulp.task('move_html', function() {
 // Optimize images
 gulp.task('images', () =>
   gulp.src('app/images/**/*')
-    .pipe(cache(imagemin({verbose: true})))
+    // .pipe(cache(imagemin({verbose: true})))
     .pipe(plumber())
     .pipe(gulp.dest('dist/images'))
 );
