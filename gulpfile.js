@@ -5,8 +5,6 @@ const browserSync = require('browser-sync');
 const sass = require('gulp-sass');
 const njkRender = require('gulp-nunjucks-render');
 const plumber = require('gulp-plumber');
-// const imagemin = require('gulp-imagemin');
-// const cache = require('gulp-cache');
 
 let reload = browserSync.reload;
 
