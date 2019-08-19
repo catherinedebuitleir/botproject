@@ -1,12 +1,8 @@
 /* jshint esversion: 6 */
-
 const gulp = require('gulp');
 const browserSync = require('browser-sync');
-const sass = require('gulp-sass');
 const njkRender = require('gulp-nunjucks-render');
 const plumber = require('gulp-plumber');
-const imagemin = require('gulp-imagemin');
-const cache = require('gulp-cache');
 
 let reload = browserSync.reload;
 
@@ -56,20 +52,10 @@ gulp.task('move_html', function() {
 // Optimize images
 gulp.task('images', () =>
   gulp.src('app/images/**/*')
-    .pipe(cache(imagemin({verbose: true})))
+    // .pipe(cache(imagemin({verbose: true})))
     .pipe(plumber())
     .pipe(gulp.dest('dist/images'))
 );
-
-// Compile sass into CSS
-gulp.task('sass', function() {
-    return gulp
-    .src([src.scss])
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(gulp.dest(dist.css))
-    .pipe(reload({ stream: true }));
-});
 
 //compile css
 gulp.task('css', function() {
@@ -89,10 +75,9 @@ gulp.task('js', function() {
 });
 
 // Static Server + watching scss/html files
-gulp.task('default', ['sass', 'css', 'templates', 'js', 'images'],
+gulp.task('default', ['css', 'templates', 'js', 'images'],
 function() {
     browserSync({ server: dist.html });
-    gulp.watch(src.scss, ['sass']);
     gulp.watch(src.css, ['css']);
     gulp.watch(src.views, ['templates']);
     gulp.watch('app/.temp_views/**/*.html', ['move_html']);
